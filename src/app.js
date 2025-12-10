@@ -27,6 +27,16 @@ window.onload = function() {
     suitBottom.classList.add(color)
     numberCard.innerHTML = randomNumber
     numberCard.classList.add(color)
+
+const effect =document.getElementById("asEffect");
+
+  if (randomNumber === "A") {
+      effect.classList.remove("hidden");
+      setTimeout(()=>{
+        effect.classList.add("hidden");
+      },1000);
+    }
+  
   }
 
   randomCardButton.addEventListener("click", () => randomCard())

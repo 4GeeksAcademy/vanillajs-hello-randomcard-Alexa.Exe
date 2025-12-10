@@ -18,3 +18,30 @@ body {
     height: 30rem;
     width: 20rem;
 }
+
+#asEffect{
+position: absolute;
+top: 0;
+left: 0;
+width:100%;
+height: 100%;
+pointer-events: none;
+background-image: url('https://img.freepik.com/vector-gratis/confeti-colores-cumpleanos-sobre-fondo-transparente_1035-23618.jpg?semt=ais_hybrid&w=740&q=80');
+background-repeat: repeat;
+background-size: cover;
+z-index:9999;
+animation: sparkle 1s ease-out;
+}
+
+.hidden{
+    display:none;
+}
+
+@keyframes sparkle{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
